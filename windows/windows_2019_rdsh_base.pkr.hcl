@@ -67,8 +67,9 @@ source "vsphere-iso" "rdsh-base" {
         "./scripts/windows-vmtools.ps1"
     ]
     guest_os_type = "windows2019srv_64Guest"
+    iso_url = "SW_DVD9_Win_Server_STD_CORE_2019_64Bit_English_DC_STD_MLF_X21-96581.iso"
+    iso_checksum = "sha256:61a391f0dc98e703da674df3c984ac2eb432ff757f949385360e68476c920478"
     iso_paths = [
-        "[datastore1] ISO/server2019.iso",
         "[] /usr/lib/vmware/isoimages/windows.iso"
     ]
     RAM = "${var.memory}"
